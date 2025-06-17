@@ -17,7 +17,7 @@ body:
     label: 大类
     placeholder: 接口 / 事件 / MCS / 其他
   validations:
-    required: false
+    required: true
 
 - type: input
   id: interface_type
