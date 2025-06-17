@@ -1,5 +1,5 @@
 name: Bug反馈
-description: 反馈一个Bug
+description: Bug请在开发者平台进行反馈，暂不支持Github反馈
 title: "[Bug] "
 labels: [Bug]
 body:
