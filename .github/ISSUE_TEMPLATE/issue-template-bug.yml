@@ -1,21 +1,21 @@
-name: bug反馈
-description: 反馈一个bug
-title: "[bug] "
-labels: [bug]
+name: Bug反馈
+description: 反馈一个Bug
+title: "[Bug] "
+labels: [Bug]
 body:
   - type: dropdown
     id: is_reproducible
     attributes:
-      label: 是否为必现bug
-      description: 选择bug类型
+      label: 是否为必现Bug
+      description: 选择Bug类型
       options:
-        - 必现（必定复现的bug）
-        - 偶现（偶然出现的bug）
+        - 必现（必定复现的Bug）
+        - 偶现（偶然出现的Bug）
     validations:
       required: true
 
   - type: textarea
-    id: bug_description
+    id: Bug_description
     attributes:
       label: Bug描述
       description: 清晰简明地描述Bug的表现或问题

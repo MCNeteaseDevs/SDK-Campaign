@@ -1,0 +1,52 @@
+name: 功能需求
+description: 提出一个新的功能或改进建议
+title: "[Feature] "
+labels: [Feature]
+body:
+- type: input
+  id: developer_name
+  attributes:
+    label: 开发者名称
+    placeholder: 请输入您的开发者名称
+  validations:
+    required: false
+
+- type: input
+  id: category
+  attributes:
+    label: 大类
+    placeholder: 接口 / 事件 / MCS / 其他
+  validations:
+    required: false
+
+- type: input
+  id: interface_type
+  attributes:
+    label: 类型
+    placeholder: 服务端/客服端/其他
+  validations:
+    required: false
+
+- type: textarea
+  id: sdk_background
+  attributes:
+    label: SDK需求背景
+    placeholder: 详细描述为什么需要这么一个SDK，起因是什么 （这里描述越详细，越会有助于官方进行采纳）
+  validations:
+    required: true
+
+- type: textarea
+  id: alternative_solution
+  attributes:
+    label: 替代方案
+    placeholder: 是否有替代方案，有则详细描述替代方案，以及可能会出现的问题、能否完全解决当前需求
+  validations:
+    required: false
+
+- type: textarea
+  id: sdk_usage
+  attributes:
+    label: SDK用途
+    placeholder: 详细描述需要SDK的用途，想要实现什么效果，预期解决什么问题 （这里描述越详细，越会有助于官方进行采纳）
+  validations:
+    required: true
