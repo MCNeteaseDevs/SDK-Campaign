@@ -1,0 +1,71 @@
+name: bug反馈
+description: 反馈一个bug
+title: "[bug] "
+labels: [bug]
+body:
+  - type: dropdown
+    id: is_reproducible
+    attributes:
+      label: 是否为必现bug
+      description: 选择bug类型
+      options:
+        - 必现（必定复现的bug）
+        - 偶现（偶然出现的bug）
+    validations:
+      required: true
+
+  - type: textarea
+    id: bug_description
+    attributes:
+      label: Bug描述
+      description: 清晰简明地描述Bug的表现或问题
+    validations:
+      required: true
+
+  - type: textarea
+    id: reproduction_steps
+    attributes:
+      label: 复现步骤
+      description: 详细地描述重现该Bug的操作步骤
+      placeholder: |
+        例如： 
+        1. 进入“...”页面
+        2. 点击“...”按钮
+        3. 滚动到“...”位置
+        4. 观察到Bug发生
+    validations:
+      required: true
+
+  - type: textarea
+    id: expected_behavior
+    attributes:
+      label: 期望表现
+      description: 清晰简明地描述您预期应有的正常表现
+    validations:
+      required: true
+
+  - type: textarea
+    id: screenshots
+    attributes:
+      label: 截图
+      description: 如有相关截图，请附上以帮助说明问题
+      placeholder: 在这里粘贴图片或链接
+    validations:
+      required: true
+
+  - type: textarea
+    id: device_model
+    attributes:
+      label: 设备型号
+      description: ModPC开发包/安卓手机测试包/iOS手机测试包/正式包体
+      placeholder: 如iPhone11
+    validations:
+      required: true
+
+  - type: textarea
+    id: additional_info
+    attributes:
+      label: 其他补充信息
+      description: 在此补充与问题相关的其他信息
+    validations:
+      required: false
