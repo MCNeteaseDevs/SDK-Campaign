@@ -23,7 +23,7 @@ body:
   id: interface_type
   attributes:
     label: 类型
-    placeholder: 服务端/客服端/其他
+    placeholder: 服务端/客户端/其他
   validations:
     required: false
 
