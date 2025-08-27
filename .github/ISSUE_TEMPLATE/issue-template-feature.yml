@@ -50,3 +50,10 @@ body:
     placeholder: 详细描述需要SDK的用途，想要实现什么效果，预期解决什么问题 （这里描述越详细，越会有助于官方进行采纳）
   validations:
     required: true
+- type: textarea
+  id: contact_link
+  attributes:
+    label: 联系方式
+    placeholder: 写出您的团队或者个人的联系方式，如果我们对此建议或反馈有疑问会通过联系方式联系您并进行讨论
+  validations:
+    required: true
